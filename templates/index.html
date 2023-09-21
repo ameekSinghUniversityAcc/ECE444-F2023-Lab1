@@ -1,1 +1,8 @@
-<h1>Hello World!</h1>
+{% extends "base.html" %}
+
+{% block page_content %}
+<h1>Hello!</h1>
+<p>Your local date and time is {{ moment(time_stamp).format('LLLL') }}.</p>
+<p>Time since you visited: {{ moment(time_stamp).fromNow(refresh=True) }}</p>
+<p>For dynamic hello messages, please visit <a href="/user/test">/user/test</a></p>
+{% endblock %}
