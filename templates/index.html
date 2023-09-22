@@ -3,6 +3,7 @@
 
 {% block page_content %}
 <h1>Hello, {% if name %} {{name}}{% else %}Stranger{% endif %}!</h1>
+<h1>{% if email %} Your UofT email is {{email}}{% endif %}</h1>
 <p>Your local date and time is {{ moment(time_stamp).format('LLLL') }}.</p>
 <p>Time since you visited: {{ moment(time_stamp).fromNow(refresh=True) }}</p>
 {{ wtf.quick_form(form) }}
