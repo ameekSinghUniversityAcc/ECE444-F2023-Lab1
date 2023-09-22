@@ -1,8 +1,9 @@
 {% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block page_content %}
-<h1>Hello!</h1>
+<h1>Hello, {% if name %} {{name}}{% else %}Stranger{% endif %}!</h1>
 <p>Your local date and time is {{ moment(time_stamp).format('LLLL') }}.</p>
 <p>Time since you visited: {{ moment(time_stamp).fromNow(refresh=True) }}</p>
-<p>For dynamic hello messages, please visit <a href="/user/test">/user/test</a></p>
+{{ wtf.quick_form(form) }}
 {% endblock %}
