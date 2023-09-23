@@ -3,6 +3,10 @@ This repo is a clone of https://github.com/miguelgrinberg/flasky
 ## References for git commands:
 https://git-scm.com/docs/git-reset, https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things
 
+## Activity 1 - setup complete
+![Alt text](image-9.png)
+![Alt text](image-10.png)
+
 ## Activity 2 - successfully recreated Example 2-2
 ![Activity 2 - successfully recreated Example 2-2](image.png)
 
